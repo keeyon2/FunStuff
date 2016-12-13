@@ -1,0 +1,32 @@
+{% block imports %}
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', 
+        filename='stylesheets/home.css') }}" />
+   	
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    	<script type="text/javascript" src="{{ url_for('static', filename='javascript/home.js') }}"></script>
+
+{% endblock %}
+<div class="fullscreen-bg">
+    <video loop autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+	    <!-- <source src="{{ url_for('static', filename='assets/videos/Backyard.mp4') }}" type="video/webm"> -->
+	    <!-- <source src="{{ url_for('static', filename='assets/videos/Backyard.mp4') }}" type="video/ogg">-->
+        <source src="{{ url_for('static', filename='assets/videos/year_summary.mp4') }}" type="video/mp4">
+    </video>
+</div>
+
+<div class="bottom-links bot">
+	<span> 
+		<a href="http://www.github.com/keeyon2">
+			<i class="fa fa-github" style="font-size:48;color:black"></i>
+		</a>
+		<i class="fa fa-medium" style="font-size:48;"></i>
+		<a href="https://www.youtube.com/watch?v=P-hUV9yhqgY">
+			<i class="fa fa-pied-piper-alt" style="font-size:48;color:black"></i>
+		</a>
+	</span>
+</div>
+<!-- <source src="{{ url_for('static', filename='assets/videos/Backyard.mp4') }}" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.-->
+{% block content %}
+
+{% endblock %}
